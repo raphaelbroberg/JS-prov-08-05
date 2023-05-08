@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">hello</p>
+    <img id="bild" src="picture.jpg" alt="bild">
+    <input type="text" id="textfalt">
+    <button onclick="visatext()">Visa text</button>
+    <script>
+
+        // 1
+        let add = 10 + 2
+        console.log(add)
+
+
+        // 2
+        let element = document.getElementById("demo")
+        element.textContent = "Hej"
+
+        // 3
+        function bytbild(){
+            let bild = document.getElementById("bild")
+            bild.src = "bild.jpg"
+        }
+        
+        bytbild()
+
+        // 5
+        function visatext(){
+            var textfalt = document.getElementById("textfalt").value
+            alert(textfalt)
+        }
+
+
+    </script>
+</body>
+</html>
